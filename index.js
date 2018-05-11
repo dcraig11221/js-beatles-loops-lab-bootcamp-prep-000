@@ -1,38 +1,29 @@
-var musicians = ['John', 'Paul', 'George', 'Ringo']
-var instruments = ['guitar', 'bass', 'guitar', 'drums']
+var musicians = ["John Lennon", "Paul  McCartney", "George Harrison", "Ringo Starr"]
+var instruments = ["Guitar", "Bass Guitar", "Lead Guitar", "Drums"]
 
 function theBeatlesPlay(musicians, instruments) {
-		var emptyArray = []
-		for (var i = 0; i < 4; i++) {
-			emptyArray.push(`${musicians[i]} plays ${instruments[i]}`)
+	let array = []
+	for (let i = 0; i < musicians.length; i++) {
+		array.push(`${musicians[i]} plays ${instruments[i]}`)
+	}
+	return array
+}
+
+function johnLennonFacts(array) {
+	let newArray = []
+	for (var i = 0; i < array.length; i++) {
+		newArray.push(`${array[i]}!!!`)
+	}
+	return newArray
+}
+
+function iLoveTheBeatles(n) {
+	let newArray = []
+	let i = 0
+		do {
+			newArray.push(`I love the Beatles!`)
+			i++
 		}
-		return emptyArray
-}
-
-const facts = [
-  "He was the last Beatle to learn to drive",
-  "He was never a vegetarian",
-  "He was a choir boy and boy scout",
-  "He hated the sound of his own voice"
-];
-
-//Use a while loop to loop over the facts array and add "!!!" to the end of every fact. The function should return an array of strings with exclamation points.
-
-function johnLennonFacts(facts) {
-  var newArray = []
-  var i = 0
-  while (i < facts.length) {
-  newArray.push(`${facts[i]}!!!`)
-  i++
-  }
-	return newArray
-}
-
-function iLoveTheBeatles(number) {
-	var newArray = []
-	do {
-		newArray.push('I love the Beatles!')
-		number++
-	} while (number < 15)
-	return newArray
+		while (i < n && n < 15)
+	  return newArray
 }
